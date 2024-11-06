@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Account">
+            <menu>
+
+
+                <item android:id="@+id/aboutUs_nav"
+                    android:icon="@drawable/feed_24"
+                    android:title="Terms and condition"/>
+
+                <item android:id="@+id/searchBar_nav"
+                    android:icon="@drawable/ic_search_24"
+                    android:title=" Routes"/>
+
+                <item android:id="@+id/myFarm_nav"
+                    android:icon="@drawable/route"
+                    android:title="My Routes"/>
+
+                <item android:id="@+id/feedback_nav"
+                    android:icon="@drawable/chat_24"
+                    android:title="Feedback"/>
+
+
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

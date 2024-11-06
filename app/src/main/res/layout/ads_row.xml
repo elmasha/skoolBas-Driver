@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="5dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/Ad_image"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/Ad_name"
+                android:text="Ad Name"
+                android:padding="7dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/Ad_category"
+                android:text="Ad Name"
+                android:textSize="13sp"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:textColor="@color/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Ad_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/bg_blue_category"
+                    android:padding="10dp"
+                    android:text="Ad Price"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/Edit_ads"
+                        android:textStyle="bold"
+                        android:padding="4dp"
+                        android:drawableRight="@drawable/ic_edit_34"
+                        android:drawableTint="@color/primary"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/Delete_ads"
+                        android:textStyle="bold"
+                        android:padding="4dp"
+                        android:drawableRight="@drawable/ic_delete_outline_24"
+                        android:drawableTint="@color/red"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

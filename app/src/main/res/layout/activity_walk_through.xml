@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalkThroughActivity">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/Slide_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp" />
+
+
+    <TextView
+        android:id="@+id/Skipp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:text=" Skip  "
+        android:background="@drawable/bg_accont_white"
+        android:textColor="@color/main"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:paddingStart="25dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="25dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:text=" i1-2Farm  "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:padding="25dp"
+            android:paddingBottom="25dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/walkId"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="Welcome to i1-2Farm"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/walkId2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:maxLines="2"
+            android:visibility="gone"
+            android:minLines="1"
+            android:text="Get your hands dirty with us! Welcome to the farm!"
+            android:textColor="@color/main"
+            android:textSize="17sp"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="320dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/Dot_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"></LinearLayout>
+            <RelativeLayout
+                android:background="@drawable/bg_walk_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/PrivacyPolicy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:id="@+id/viewPolicy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:visibility="gone">
+
+
+                                <ImageView
+                                    android:layout_width="26dp"
+                                    android:layout_height="26dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_policy_24" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="4dp"
+                                    android:text="Privacy &amp; Policy"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:theme="@style/checkBoxStyle" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="4dp"
+                                android:background="@color/grey"
+                                android:visibility="gone" />
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LayoutChoose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="0dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="0dp"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/secondary"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="horizontal"
+                                android:padding="0dp">
+
+
+                                <Button
+                                    android:id="@+id/workHelper"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="8dp"
+                                    android:background="@drawable/btn_sec"
+                                    android:drawableRight="@drawable/ic_east_34"
+                                    android:drawableTint="@color/white"
+                                    android:padding="10dp"
+                                    android:text="Let's Get Started "
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/RR"
+                            android:layout_centerHorizontal="true"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="350dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="horizontal"
+                                    android:padding="8dp"
+                                    android:text=" To get started, please take a moment to review our Terms and Conditions by tapping the link below: "
+                                    android:textAlignment="center"
+                                    android:textColor="@color/lightGrey"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp"
+                                    android:text="Terms,Privacy and policy. "
+                                    android:textColor="@color/main"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:layout_below="@id/RR"
+                            android:id="@+id/checkbox12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="I Agree to Terms, privacy &amp; Policy"
+                            android:textColor="@color/main"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:theme="@style/checkBoxStyle1" />
+
+
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_below="@id/checkbox12"
+                           android:layout_alignParentRight="true"
+                           android:layout_height="wrap_content">
+
+                           <com.getbase.floatingactionbutton.FloatingActionButton
+                               android:id="@+id/Back"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:visibility="gone"
+                               android:layout_alignParentRight="true"
+                               android:layout_gravity="end"
+                               android:layout_margin="5dp"
+                               app:fab_icon="@drawable/ic_back"
+                               app:fab_colorNormal="@color/main"
+                               app:fab_colorPressed="@color/secondary"
+                               android:textStyle="bold"
+                               />
+
+                           <com.getbase.floatingactionbutton.FloatingActionButton
+                               android:id="@+id/Next"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="5dp"
+                               android:layout_gravity="end"
+                               android:layout_alignParentRight="true"
+                               app:fab_colorNormal="@color/main"
+                               app:fab_icon="@drawable/ic_next"
+                               app:fab_colorPressed="@color/secondary"
+                               android:textColor="@color/primary"
+                               android:text="Swipe >>"
+                               />
+
+
+                       </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:maxLines="2"
+
+                            android:minLines="2"
+                            android:text=" Copy rights -"
+                            android:textColor="@color/lightGrey"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            android:paddingBottom="25dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:maxLines="2"
+
+                            android:minLines="2"
+                            android:text="All rights reserved "
+                            android:textColor="@color/lightGrey"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            android:paddingBottom="25dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

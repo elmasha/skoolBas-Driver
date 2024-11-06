@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/secondary"
+    tools:context=".MainActivity.FollowListActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="12dp"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/BackToMainInbox"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_back_24"
+                android:drawableTint="@color/white"/>
+
+
+
+
+
+            <TextView
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow list"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/FollowerList"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:elevation="10dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:padding="2dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/groups_34"/>
+
+
+                <TextView
+                    android:id="@+id/followerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Followers"
+                    android:padding="3dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/FollowingList"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:elevation="10dp"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <TextView
+                    android:id="@+id/followingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Following"
+                    android:padding="3dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_inbox_white"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/FollowersRecy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ErrorImage2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:visibility="gone"
+                    android:src="@drawable/error_follow"
+                    android:layout_centerInParent="true"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/followers_recycler_view">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/FollowingsRecy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ErrorImage22"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:visibility="gone"
+                    android:src="@drawable/error_follow"
+                    android:layout_centerInParent="true"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/following_recycler_view">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

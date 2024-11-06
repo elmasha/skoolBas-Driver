@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+
+        <item name="android:fontFamily">@font/montserrat</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme.BackgroundImageStyleSplash">
+        <item name="android:windowBackground" >@drawable/splash</item>
+    </style>
+    <style name="AppTheme.BackgroundChatStyleSplash">
+        <item name="android:windowBackground" >@drawable/chatbg</item>
+    </style>
+
+
+    <style name="AppTheme.BackgroundImageStyleWalk">
+        <item name="android:windowBackground" >@drawable/walk</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+
+    <style name="checkBoxStyle1" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/main</item>
+        <item name="android:textColorSecondary">@color/main</item>
+    </style>
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/lightGrey</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:thumbTint">@color/primary</item>
+    </style>
+
+    <style name="MyProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:progressTint">@color/black</item>
+    </style>
+
+</resources>

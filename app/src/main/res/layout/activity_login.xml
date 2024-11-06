@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primary"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.Account.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="18dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/black"
+                    android:drawableBottom="@drawable/ic_back_account_44"/>
+
+                <TextView
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Back."/>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue with your adventure."/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/Sms_LL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/Pass_otp"
+                                android:layout_width="280dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:textColor="@color/lightGrey"
+                                android:text="We will send an One Time Password on this mobile number"
+                                android:gravity="center_horizontal" />
+
+
+                            <LinearLayout
+                                android:background="@drawable/border_gray_st3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="15dp"
+                                android:padding="2dp"
+
+                                android:layout_marginTop="100dp"
+                                android:orientation="horizontal">
+
+                                <com.hbb20.CountryCodePicker
+                                    android:id="@+id/Phone_picker_loginL"
+                                    android:layout_width="100dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    app:ccp_autoDetectCountry="true"
+                                    app:ccp_autoDetectLanguage="true"
+                                    app:ccp_autoFormatNumber="false"
+                                    app:ccp_clickable="true"
+                                    app:ccp_contentColor="@color/white"
+                                    app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                                    app:ccp_defaultNameCode="KE"
+                                    app:ccp_rememberLastSelection="true"
+                                    app:ccp_showNameCode="false"
+                                    app:ccp_showPhoneCode="true"
+                                    app:ccp_textGravity="LEFT" />
+
+                                <EditText
+                                    android:id="@+id/phone_no_loginL"
+                                    android:layout_width="160dp"
+                                    android:layout_height="50dp"
+                                    android:hint="7*34**5*"
+                                    android:textStyle="bold"
+                                    android:inputType="phone"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+                            <Button
+                                android:id="@+id/Btn_loginL"
+                                android:layout_width="300dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/btn_sec"
+                                android:text="Request OTP"
+                                android:textAllCaps="false"
+                                android:textColor="@color/primary" />
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:visibility="gone"
+                                android:layout_gravity="end"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="17sp"
+                                    android:text="Fogort password?"/>
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/Otp_LL"
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="15dp"
+                                android:layout_marginTop="100dp"
+                                android:orientation="vertical">
+
+
+
+                                <EditText
+                                    android:id="@+id/otp_login_L"
+                                    android:layout_width="160dp"
+                                    android:layout_height="wrap_content"
+                                    android:hint="*-*-*"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textAlignment="center"
+                                    android:background="@drawable/border_gray_st3"
+                                    android:inputType="phone"
+                                    android:padding="15dp"
+                                    android:textSize="25sp"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/grey" />
+
+
+
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="OTP was sent to"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:id="@+id/ToPhoneL"
+                                        android:layout_width="wrap_content"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"
+                                        android:layout_marginStart="4dp"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/timerL"
+                                    android:layout_width="wrap_content"
+                                    android:text="80"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="15sp"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:id="@+id/ResenditL"
+                                    android:layout_width="wrap_content"
+                                    android:text="Resend"
+                                    android:visibility="gone"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/Btn_verify_codeL"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="5dp"
+                                android:textSize="16sp"
+                                android:background="@drawable/btn_sec"
+                                android:text="Very Code"
+                                android:textAllCaps="false"
+                                android:textColor="@color/primary" />
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:text="I don't have an account"/>
+                <TextView
+                    android:id="@+id/ToRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:text="Register"/>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

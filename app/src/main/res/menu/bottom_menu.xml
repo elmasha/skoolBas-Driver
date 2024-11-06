@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myfarm_b_nav"
+        android:title="My Farm"
+        android:icon="@drawable/ic_landslide_24"/>
+    <item
+        android:id="@+id/explore_b_nav"
+        android:title="Explore"
+        android:icon="@drawable/ic_search_24"/>
+    <item
+        android:id="@+id/inbox_b_nav"
+        android:title="Inbox"
+        android:icon="@drawable/ic_email_24"/>
+
+    <item
+        android:id="@+id/notification_b_nav"
+        android:title="Inbox"
+        android:icon="@drawable/ic_notifications_30"/>
+</menu>

@@ -1,0 +1,140 @@
+{
+  "project_info": {
+    "project_number": "451427078560",
+    "firebase_url": "https://skoolbus-8c114-default-rtdb.firebaseio.com",
+    "project_id": "skoolbus-8c114",
+    "storage_bucket": "skoolbus-8c114.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451427078560:android:02d1c6b9a0d5174a3414c5",
+        "android_client_info": {
+          "package_name": "com.app.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451427078560-6414c5kmqjjc4t4grhvp2itp0cs52q0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.driver",
+            "certificate_hash": "de939821eaeb2fd7cb9d506d02ca11680d28c17f"
+          }
+        },
+        {
+          "client_id": "451427078560-1sdrej47abtkjtvr0v4aj6ipabh0j7cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSm8nftKPe3qEVtwoKndfFr1BLC71yw_c"
+        },
+        {
+          "current_key": "AIzaSyBYmeeHvU9No8CE94aNG8_rG6Vrrhs3moI"
+        },
+        {
+          "current_key": "AIzaSyChOWiYa14apHjzlnwTEJlEehYNLa8tC_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451427078560-1sdrej47abtkjtvr0v4aj6ipabh0j7cq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451427078560:android:599a4df36058b73c3414c5",
+        "android_client_info": {
+          "package_name": "com.app.parents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451427078560-aunl0d3ml1eakgps38pb5vbrbh3eoolu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.parents",
+            "certificate_hash": "de939821eaeb2fd7cb9d506d02ca11680d28c17f"
+          }
+        },
+        {
+          "client_id": "451427078560-1sdrej47abtkjtvr0v4aj6ipabh0j7cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSm8nftKPe3qEVtwoKndfFr1BLC71yw_c"
+        },
+        {
+          "current_key": "AIzaSyBYmeeHvU9No8CE94aNG8_rG6Vrrhs3moI"
+        },
+        {
+          "current_key": "AIzaSyChOWiYa14apHjzlnwTEJlEehYNLa8tC_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451427078560-1sdrej47abtkjtvr0v4aj6ipabh0j7cq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451427078560:android:720c778227c9142d3414c5",
+        "android_client_info": {
+          "package_name": "com.app.skoolbasDriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451427078560-pmkrg3bejr792j318s56c1uqukhpqv5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.skoolbasDriver",
+            "certificate_hash": "de939821eaeb2fd7cb9d506d02ca11680d28c17f"
+          }
+        },
+        {
+          "client_id": "451427078560-1sdrej47abtkjtvr0v4aj6ipabh0j7cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSm8nftKPe3qEVtwoKndfFr1BLC71yw_c"
+        },
+        {
+          "current_key": "AIzaSyBYmeeHvU9No8CE94aNG8_rG6Vrrhs3moI"
+        },
+        {
+          "current_key": "AIzaSyChOWiYa14apHjzlnwTEJlEehYNLa8tC_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451427078560-1sdrej47abtkjtvr0v4aj6ipabh0j7cq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

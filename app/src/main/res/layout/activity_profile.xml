@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/secondary"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.Account.ProfileActivity">
+
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/BackProfile_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:drawableRight="@drawable/ic_back_34"
+                    android:drawableTint="@color/white" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="My Profile"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:drawableTint="@color/white" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_inbox_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/L12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/EditMyProfile_myProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:background="@color/white"
+                            android:src="@drawable/baseline_settings_24"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:text="Edit profile"
+                            android:textColor="@color/main"
+                            android:drawableTint="@color/main" />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="14dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/farm_image_profile"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/Add_profile"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_alignParentBottom="true"
+                            android:drawableRight="@drawable/add"
+                            android:drawableTint="@color/secondary"/>
+
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/ProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Elmasha Omondi."
+                        android:textColor="@color/main"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:drawableTint="@color/main" />
+
+
+                    <LinearLayout
+                        android:id="@+id/EditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:background="@color/white"
+                            android:src="@drawable/baseline_settings_24"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:text=" Edit Profile"
+                            android:textColor="@color/main"
+                            android:drawableTint="@color/main" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/ProfileID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:drawableLeft="@drawable/copy_24"
+                        android:layout_gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/main"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:drawableTint="@color/main" />
+
+
+
+
+
+
+
+
+               <androidx.core.widget.NestedScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+
+
+
+
+
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+
+
+
+
+                           <LinearLayout
+                               android:id="@+id/LinearProfile"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginStart="10dp"
+                               android:layout_marginTop="10dp"
+                               android:layout_marginEnd="10dp"
+                               android:layout_marginBottom="10dp"
+                               android:orientation="vertical"
+                               android:padding="6dp">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:drawableTint="@color/main"
+                                   android:text="My Farm"
+                                   android:drawableLeft="@drawable/farm_pin"
+                                   android:textColor="@color/secondary"
+                                   android:textSize="16sp"
+                                   android:textStyle="bold" />
+
+                               <TextView
+                                   android:id="@+id/farm_name_profile"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:ellipsize="end"
+                                   android:text="Farm name "
+                                   android:textColor="@color/black"
+                                   android:textSize="16sp"
+                                   android:textStyle="bold" />
+
+                               <TextView
+                                   android:id="@+id/farm_category_profilr"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Farm name "
+                                   android:textColor="@color/black"
+                                   android:textSize="13sp" />
+
+
+                           </LinearLayout>
+
+                           <TextView
+                               android:id="@+id/farm_rate_profile"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentRight="true"
+                               android:drawableRight="@drawable/star_half_34"
+                               android:gravity="center"
+                               android:padding="5dp"
+                               android:text=" 0.0 "
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:id="@+id/LinearEditProfile"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="10dp"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginEnd="10dp"
+                           android:visibility="gone"
+                           android:layout_marginBottom="10dp"
+                           android:orientation="vertical"
+                           android:padding="2dp">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerHorizontal="true"
+                               android:drawableTint="@color/main"
+                               android:text="Edit Farm"
+                               android:textColor="@color/secondary"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+
+
+                           <EditText
+                               android:id="@+id/edit_username_profile"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:ellipsize="end"
+                               android:hint="Edit user name"
+                               android:textColor="@color/black"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+
+                           <EditText
+                               android:id="@+id/edit_email_profile"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:ellipsize="end"
+                               android:hint="Input email. "
+                               android:textColor="@color/black"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+
+
+                           <Button
+                               android:id="@+id/BtnSaveChanges"
+                               android:layout_width="200dp"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/white"
+                               android:text="Save Changes"
+                               android:textStyle="bold"
+                               android:textAllCaps="false"
+                               android:background="@drawable/btn_blue"/>
+
+
+                       </LinearLayout>
+
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+
+                       </LinearLayout>
+
+
+
+                       <LinearLayout
+                           android:id="@+id/Linear_profile"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/FarmFeedbackProfile"
+                               android:layout_width="match_parent"
+                               android:layout_margin="10dp"
+                               android:padding="8dp"
+                               android:background="@drawable/bg_sec_category"
+                               android:layout_height="wrap_content">
+
+
+                               <LinearLayout
+                                   android:layout_width="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:padding="10dp"
+                                   android:layout_height="wrap_content">
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:textStyle="bold"
+                                       android:textColor="@color/main"
+                                       android:textSize="16sp"
+                                       android:text="Share Feedack"
+                                       android:layout_height="wrap_content"/>
+
+                               </LinearLayout>
+
+
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/FarmTermsProfile"
+                               android:layout_width="match_parent"
+                               android:layout_margin="10dp"
+                               android:padding="8dp"
+                               android:background="@drawable/bg_sec_category"
+                               android:layout_height="wrap_content">
+
+
+                               <LinearLayout
+                                   android:layout_width="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:padding="10dp"
+                                   android:layout_height="wrap_content">
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:textStyle="bold"
+                                       android:textColor="@color/main"
+                                       android:textSize="16sp"
+                                       android:text="Privacy and Terms"
+                                       android:layout_height="wrap_content"/>
+
+                               </LinearLayout>
+
+
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_margin="10dp"
+                               android:padding="8dp"
+                               android:background="@drawable/bg_sec_category"
+                               android:layout_height="wrap_content">
+
+
+                               <LinearLayout
+                                   android:layout_width="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:padding="10dp"
+                                   android:layout_height="wrap_content">
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:textStyle="bold"
+                                       android:textColor="@color/main"
+                                       android:textSize="16sp"
+                                       android:text="About us"
+                                       android:layout_height="wrap_content"/>
+
+                               </LinearLayout>
+
+
+                           </LinearLayout>
+
+
+
+
+
+                       </LinearLayout>
+
+
+
+                   </LinearLayout>
+               </androidx.core.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/LogOutLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/transparent"
+        android:padding="0dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Log out"
+                            android:textColor="@color/red"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/logout_34"
+                        android:layout_gravity="end"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="5dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:padding="2dp"
+        android:background="@drawable/bg_blue_category"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/Ad_image"
+                    android:background="@drawable/bg_blue_category"
+                    android:layout_width="130dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_sec_category"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_image_ad_row"
+                        android:layout_width="24dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/Ad_farmName"
+                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:minLines="1"
+                        android:padding="2dp"
+                        android:layout_height="wrap_content"
+                        android:text="Farm user"
+                        android:layout_gravity="center"
+                        android:textColor="@color/main"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Ad_name"
+                            android:text=""
+                            android:padding="3dp"
+                            android:ellipsize="end"
+                            android:textSize="13sp"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/Ad_desc"
+                            android:text=""
+                            android:padding="1dp"
+                            android:maxLines="3"
+                            android:minLines="1"
+                            android:textSize="11sp"
+                            android:ellipsize="end"
+                            android:textColor="@color/lightGrey"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:id="@+id/Ad_category"
+                            android:text="Ad Name"
+                            android:textSize="13sp"
+                            android:padding="3dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:textColor="@color/main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/Ad_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="6dp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:padding="4dp"
+                                android:text="Ad Price"
+                                android:textColor="@color/secondary"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

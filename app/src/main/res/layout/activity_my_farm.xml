@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/secondary"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity.ViewFarmActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/BackMaps_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/ic_back_34"
+                android:drawableTint="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text="My Farm"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:drawableTint="@color/main" />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:background="@drawable/bg_inbox_white"
+            android:orientation="vertical">
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <com.smarteist.autoimageslider.SliderView
+                                android:id="@+id/slider2"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="220dp"
+                                android:layout_centerHorizontal="true"
+                                app:sliderAnimationDuration="600"
+                                app:sliderAutoCycleDirection="back_and_forth"
+                                app:sliderIndicatorEnabled="false"
+                                app:sliderScrollTimeInSec="2" />
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_farm"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/btn_white"
+                            android:layout_alignParentBottom="true"
+                            android:padding="6dp">
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:padding="10dp"
+                                android:layout_margin="12dp"
+                                android:visibility="gone"
+                                android:background="@drawable/btn_blue"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:padding="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/farm_adsCount_my"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/secondary"
+                                        android:padding="0dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text=" 3 "
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:padding="0dp"
+                                        android:text="My ads"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_margin="4dp"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/secondary"/>
+
+
+                                <LinearLayout
+                                    android:id="@+id/my_profile_followers"
+                                    android:padding="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/farm_followersCount_my"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/secondary"
+                                        android:padding="0dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text=" 163 "
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/FollowerText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:padding="0dp"
+                                        android:textColor="@color/white"
+                                        android:text="Followers"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_margin="4dp"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/secondary"/>
+
+                                <LinearLayout
+                                    android:padding="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/farm_reviewsCount_my"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/secondary"
+                                        android:padding="0dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text=" 16 "
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:padding="0dp"
+                                        android:textColor="@color/white"
+                                        android:text="Reviews"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="6dp">
+
+
+                                    <TextView
+                                        android:id="@+id/user_name_my"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:visibility="gone"
+                                        android:minLines="1"
+                                        android:text="Farm name "
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/farm_name_my"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:minLines="1"
+                                        android:text="Farm name "
+                                        android:textColor="@color/black"
+                                        android:textSize="19sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/farm_category_my"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Farm name "
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+
+                                        android:id="@+id/farm_county_my"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="County "
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+
+
+                                </LinearLayout>
+                                <TextView
+                                    android:id="@+id/farm_rate_my"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/star_half_34"
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:padding="5dp"
+                                    android:textColor="@color/primary"
+                                    android:text=" 0.0 "
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_gravity="center"
+                                android:layout_margin="0dp"
+                                app:cardCornerRadius="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:padding="3dp"
+                                    android:background="@color/primary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:orientation="horizontal"
+                                        android:padding="6dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:padding="4dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/weather_locationMy"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text=""
+                                                    android:textStyle="bold"
+                                                    android:textSize="14sp"
+                                                    android:ellipsize="end"
+                                                    android:maxLines="1"
+                                                    android:minLines="1"
+                                                    android:drawableTint="@color/white"
+                                                    android:textColor="@color/white"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    android:drawableLeft="@drawable/ic_location_pin"/>
+
+
+                                            </LinearLayout>
+
+
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:padding="1dp"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+
+
+
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="horizontal">
+                                                        <TextView
+                                                            android:id="@+id/weather_temperatureMy"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="0 C"
+                                                            android:textStyle="bold"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="19sp"
+                                                            android:layout_gravity="center"
+                                                            android:textAlignment="center"
+                                                            />
+
+
+                                                        <LinearLayout
+                                                            android:orientation="vertical"
+                                                            android:padding="3dp"
+                                                            android:visibility="gone"
+                                                            android:layout_marginStart="5dp"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content">
+
+                                                            <TextView
+                                                                android:id="@+id/weather_temp_maxMy"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="0 C"
+                                                                android:drawableLeft="@drawable/ic_arrow_upward_16"
+                                                                android:textStyle="bold"
+                                                                android:drawableTint="@color/ColorGreen"
+                                                                android:textColor="@color/white"
+                                                                android:textSize="13sp"
+                                                                android:textAlignment="center"
+                                                                android:layout_gravity="center"
+                                                                />
+
+                                                            <TextView
+                                                                android:id="@+id/weather_temp_minMy"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="0 C"
+                                                                android:drawableLeft="@drawable/ic_arrow_downward_16"
+                                                                android:textStyle="bold"
+                                                                android:drawableTint="@color/red"
+                                                                android:textColor="@color/white"
+                                                                android:textSize="13sp"
+                                                                android:textAlignment="center"
+                                                                android:layout_gravity="center"
+                                                                />
+
+                                                        </LinearLayout>
+
+                                                        <ImageView
+                                                            android:id="@+id/weather_iconViewMy"
+                                                            android:layout_width="60dp"
+                                                            android:layout_height="40dp"
+                                                            android:layout_gravity="center" />
+                                                    </LinearLayout>
+
+
+
+                                                    <TextView
+                                                        android:id="@+id/weather_descMy"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text=""
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/lightGrey200"
+                                                        android:textSize="13sp"
+                                                        android:textStyle="bold" />
+
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content">
+
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_gravity="center"
+                                                android:layout_height="wrap_content">
+
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:padding="6dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Humidity"
+                                                        android:drawableLeft="@drawable/ic_water_drop_14"
+                                                        android:textStyle="bold"
+                                                        android:textColor="@color/lightGrey"
+                                                        android:textSize="13sp"
+                                                        android:textAlignment="center"
+                                                        android:layout_gravity="center"
+                                                        />
+
+                                                    <TextView
+                                                        android:id="@+id/weather_humidityMy"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="0"
+                                                        android:textStyle="bold"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="13sp"
+                                                        android:textAlignment="center"
+                                                        android:layout_gravity="center"
+                                                        />
+
+                                                </LinearLayout>
+
+
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:padding="6dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Pressure"
+                                                        android:drawableLeft="@drawable/ic_pressure_14"
+                                                        android:textStyle="bold"
+                                                        android:textColor="@color/lightGrey"
+                                                        android:textSize="13sp"
+                                                        android:textAlignment="center"
+                                                        android:layout_gravity="center"
+                                                        />
+
+                                                    <TextView
+                                                        android:id="@+id/weather_pressureMy"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="0"
+                                                        android:textStyle="bold"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="13sp"
+                                                        android:textAlignment="center"
+                                                        android:layout_gravity="center"
+                                                        />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+
+
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:padding="6dp"
+                                                android:layout_marginRight="8dp"
+                                                android:layout_gravity="end"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Wind"
+                                                    android:drawableLeft="@drawable/ic_wind_14"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/lightGrey"
+                                                    android:textSize="13sp"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    />
+
+                                                <TextView
+                                                    android:id="@+id/weather_windMy"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="0"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="13sp"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    />
+
+                                            </LinearLayout>
+
+
+
+
+
+                                        </LinearLayout>
+
+
+
+                                        <TextView
+                                            android:id="@+id/weather_refreshMy"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:layout_marginTop="20dp"
+                                            android:layout_marginRight="30dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:drawableLeft="@drawable/ic_refresh_16"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp"
+                                            />
+
+                                    </RelativeLayout>
+
+
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:padding="6dp"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:id="@+id/FollowerList"
+                                        android:layout_width="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_margin="4dp"
+                                        android:padding="2dp"
+                                        android:background="@drawable/bg_blue_category"
+                                        android:elevation="10dp"
+                                        android:layout_height="wrap_content">
+
+
+                                        <ImageView
+                                            android:layout_width="28dp"
+                                            android:padding="2dp"
+                                            android:layout_height="28dp"
+                                            android:src="@drawable/groups_34"/>
+
+
+                                        <TextView
+                                            android:id="@+id/followerText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/white"
+                                            android:text="Followers"
+                                            android:padding="0dp"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="0dp"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"/>
+
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/FollowingList"
+                                        android:layout_width="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_margin="4dp"
+                                        android:padding="2dp"
+                                        android:elevation="10dp"
+                                        android:layout_height="wrap_content">
+
+
+
+
+
+                                        <TextView
+                                            android:id="@+id/followingText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/main"
+                                            android:text="Following"
+                                            android:padding="3dp"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="0dp"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"/>
+
+
+
+                                    </LinearLayout>
+
+
+
+
+
+
+                                </LinearLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/FollowersRecy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:padding="7dp"
+                                        android:id="@+id/FollowersFarmRecyclerview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/FollowingsRecy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:padding="7dp"
+                                        android:id="@+id/FollowingFarmRecyclerview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/showMore"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/showMore0_my"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Show more  "
+                                android:textSize="16sp"
+                                android:textColor="@color/main"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/showMore1"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:src="@drawable/arrow_drop_down_24"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/showMore2"
+                                    android:src="@drawable/arrow_drop_up_24"
+                                    android:layout_width="28dp"
+                                    android:visibility="gone"
+                                    android:layout_height="28dp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/ExpandReView_my"
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/farm_phone_my"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/bg_main_category"
+                                    android:drawableLeft="@drawable/local_phone_white_24"
+                                    android:drawableTint="@color/white"
+                                    android:gravity="center"
+                                    android:padding="7dp"
+                                    android:textColor="@color/white"
+                                    android:text="  "
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="0dp"
+                                    android:padding="5dp"
+                                    android:text="Farm Description."
+                                    android:textColor="@color/secondary"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/farm_Description_my"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="0dp"
+                                    android:maxLines="8"
+                                    android:minLines="1"
+                                    android:padding="8dp"
+                                    android:text=""
+                                    android:textColor="@color/grey"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="0dp"
+                                    android:drawableLeft="@drawable/image_24"
+                                    android:drawableTint="@color/secondary"
+                                    android:padding="5dp"
+                                    android:text=" Farm gallery "
+                                    android:textColor="@color/secondary"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/Add_imageFarm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginBottom="0dp"
+                                    android:drawableLeft="@drawable/add_a_photo_24"
+                                    android:drawableTint="@color/secondary"
+                                    android:padding="5dp"
+                                    android:text=" Add Image "
+                                    android:textColor="@color/secondary"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/FetchFarmImagesRecyclerView_my"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp" />
+
+                            </FrameLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:id="@+id/OnMaps_my"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/bg_main_category"
+                                android:elevation="10dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:padding="2dp"
+                                    android:src="@drawable/farm_white" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="0dp"
+                                    android:padding="0dp"
+                                    android:text="My location"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/OnAds_my"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_main_category"
+                                android:elevation="10dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:padding="2dp"
+                                    android:src="@drawable/ad_post" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="0dp"
+                                    android:padding="0dp"
+                                    android:text="My Ads"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/OnReviews_my"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/bg_main_category"
+                                android:elevation="10dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:padding="2dp"
+                                    android:src="@drawable/discuss" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="0dp"
+                                    android:padding="0dp"
+                                    android:text="Reviews"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LayoutMaps_my"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/myFarmVisiblity1"
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Make your Farm visible  "
+                                    android:textSize="14sp"
+                                    android:textColor="@color/main"
+                                    android:textStyle="bold" />
+
+
+                                <Switch
+                                    android:id="@+id/ShowMyLocation"
+                                    android:layout_width="wrap_content"
+                                    android:padding="8dp"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <fragment
+                                    android:id="@+id/map4"
+                                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:context=".MainActivity.MyFarmActivity" />
+
+                                <LinearLayout
+                                    android:id="@+id/WarningLayout"
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/bg_lightgrey"
+                                    android:elevation="20dp"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:drawableTop="@drawable/farm_pin"
+                                        android:padding="1dp"
+                                        android:text="How to pin Your farm Location"
+                                        android:textColor="@color/secondary"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:padding="7dp"
+                                        android:text="Double-check that the coordinates or address you enter accurately represent your farm's location. "
+                                        android:textAlignment="center"
+                                        android:textColor="@color/main"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/LayoutAds_my"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/Add_ads"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_white_category"
+                                android:elevation="18dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:padding="2dp"
+                                    android:src="@drawable/add_ad" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="0dp"
+                                    android:padding="4dp"
+                                    android:text="Upload an Ad"
+                                    android:textColor="@color/main"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:padding="5dp"
+                                android:text="My Ads."
+                                android:textColor="@color/main"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/ErrorImageAds_my"
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:visibility="gone"
+                                    android:src="@drawable/adss"
+                                    android:layout_centerInParent="true"/>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/AdRecyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/LayoutReview_my"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:padding="7dp"
+                                android:text="All Reviews."
+                                android:textColor="@color/main"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ErrorImageReview_my"
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:visibility="gone"
+                                    android:src="@drawable/rrview"
+                                    android:layout_centerInParent="true"/>
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/ReviewRecyclerView_my"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/EditFarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:background="@color/white"
+                            android:src="@drawable/baseline_settings_24"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:text=" Edit farm"
+                            android:textColor="@color/main"
+                            android:drawableTint="@color/main" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+  </RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:text="Update your ads"
+                android:textColor="@color/secondary"
+                android:textSize="19sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/CloseAdImageViewE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableRight="@drawable/close_44"
+                android:padding="4dp"></TextView>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/UploadImageAdE"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    app:fab_colorPressed="@color/secondary"
+                    app:fab_colorNormal="@color/main"
+                    app:fab_icon="@drawable/add_a_photo_24"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="8dp"
+                    android:text="Update image"
+                    android:textColor="@color/primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/AdImageViewE"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Ad_titleE"
+                android:layout_width="350dp"
+                android:hint=" A Title"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/Ad_categoryE"
+                android:layout_width="350dp"
+                android:hint=" Ad category"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/Ad_descriptionE"
+                android:layout_width="350dp"
+                android:hint=" Ad description"
+                android:maxLines="4"
+                android:minLines="3"
+                android:textStyle="normal"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/Ad_priceE"
+                android:layout_width="350dp"
+                android:hint=" Enter Price (Optional)"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/Btn_PostAdE"
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update changes"
+            android:background="@color/secondary"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
